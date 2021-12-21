@@ -74,14 +74,14 @@
                 adjust_layer {
                         label = "ADJUST";
 // -----------------------------------------------------------------------------------------
-// | N/A | N/A | N/A | N/A | N/A | N/A |   | N/A | N/A | N/A | N/A | N/A | N/A |
-// |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | N/A | N/A | N/A | N/A | N/A | N/A |
-// | N/A | N/A | N/A | N/A | N/A | N/A |   | N/A | N/A | N/A | N/A | N/A | N/A |
-//                   |     |     |     |   |     |     |     |
+// | N/A | N/A | N/A | N/A | N/A | N/A |   | N/A | VOL_UP | N/A | N/A | N/A | N/A |
+// |BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | N/A | VOL_DN | N/A | N/A | N/A | N/A |
+// | N/A | N/A | N/A | N/A | N/A | N/A |   | N/A | MUTE   | N/A | N/A | N/A | N/A |
+//                   |     |     |     |   |     |        |     |
                         bindings = <
-   &none      &none        &none        &none        &none        &none          &none  &none  &none &none &none
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none  &none  &none &none &none
-   &none      &none        &none        &none        &none        &none          &none  &none  &none &none &none
+   &none      &none        &none        &none        &none        &none          &none  &kp C_VOL_UP &none &none &none
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none  &kp C_VOL_DN &none &none &none
+   &none      &none        &none        &none        &none        &none          &none  &kp K_MUTE   &none &none &none
                     	                &trans       &trans       &trans         &trans &trans &trans 
                         >;
                 };
